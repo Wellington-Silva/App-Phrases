@@ -7,7 +7,6 @@ import { Module } from '@nestjs/common';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      // Configuração do TypeORM aqui
       "type": "postgres",
       "host": process.env.HOST,
       "port": 5432,
@@ -22,4 +21,4 @@ import { Module } from '@nestjs/common';
   controllers: [PhrasesController],
   providers: [PhrasesService],
 })
-export class PhrasesModule { }
+export class PhrasesModule {};
